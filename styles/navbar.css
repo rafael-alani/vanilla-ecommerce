@@ -1,0 +1,43 @@
+.header {
+    background-color: var(--primary);
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.06);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.4rem 6.6rem;
+
+}
+
+.navbar-container {
+    flex-grow: 0.3;
+    margin: auto 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #1a1a1a;
+    font-weight: 500;
+    font-size: 1.3rem;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a:focus,
+.navbar a.active {
+    color: var(--font-highlight);
+}
+
+.navbar a:hover::after,
+.navbar a:focus::after,
+.navbar a.active::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: var(--font-highlight);
+
+}
